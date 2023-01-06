@@ -1,0 +1,12 @@
+diff --git a/libglusterfs/src/glusterfs/atomic.h b/libglusterfs/src/glusterfs/atomic.h
+index ced8174821..728bf1527e 100644
+--- a/libglusterfs/src/glusterfs/atomic.h
++++ b/libglusterfs/src/glusterfs/atomic.h
+@@ -60,6 +60,7 @@
+
+ #if defined(HAVE_ATOMIC_BUILTINS) || defined(HAVE_SYNC_BUILTINS)
+
++#define GF_ATOMIC_SIZE_0 GF_ATOMIC_MUTEX_FIELD_0
+ #define GF_ATOMIC_SIZE_1 GF_ATOMIC_MUTEX_FIELD_0
+ #define GF_ATOMIC_SIZE_2 GF_ATOMIC_MUTEX_FIELD_0
+ #define GF_ATOMIC_SIZE_4 GF_ATOMIC_MUTEX_FIELD_0
